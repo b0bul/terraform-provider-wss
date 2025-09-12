@@ -1,5 +1,3 @@
-provider "assert" {}
-
 variables {
   endpoint    = "https://yolo-son.free.beeceptor.com"
   module_path = "."
