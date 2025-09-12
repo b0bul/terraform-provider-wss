@@ -9,7 +9,6 @@ run "speech_wss_t1" {
   }
   variables {
     // allow https:// blob endpoint
-    body     = base64encode(file("${var.module_path}/speech/t.wav"))
     endpoint = var.endpoint
     uri      = "/status"
     method   = "GET"
@@ -35,7 +34,7 @@ run "speech_wss_t2" {
     source = "./testing/http"
   }
   variables {
-    body     = base64encode(file("${var.module_path}/speech/t.wav"))
+    body     = base64encode(file("${var.module_path}/data/t.wav"))
     endpoint = var.endpoint
     uri      = "/analyze"
     method   = "POST"
