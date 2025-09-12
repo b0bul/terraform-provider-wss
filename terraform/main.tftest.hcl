@@ -3,7 +3,7 @@ variables {
   module_path = "."
 }
 
-run "speech_wss_t1" {
+run "wss_t1" {
   module {
     source = "./testing/http"
   }
@@ -29,7 +29,7 @@ run "speech_wss_t1" {
   }
 }
 
-run "speech_wss_t2" {
+run "wss_t2" {
   module {
     source = "./testing/http"
   }
