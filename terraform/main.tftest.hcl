@@ -55,7 +55,7 @@ run "wss_t2" {
   }
   assert {
     condition     = provider::assert::valid_json(data.http.test.response_body)
-    error_message = "boo from t1!"
+    error_message = "boo from t2!"
   }
   assert {
     condition     = jsondecode(data.http.test.response_body) == var.expect.json
