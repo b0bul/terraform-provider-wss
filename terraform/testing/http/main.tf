@@ -1,6 +1,5 @@
 locals {
   url = "${var.endpoint}${var.uri}"
-
 }
 
 check "unique_name" {
